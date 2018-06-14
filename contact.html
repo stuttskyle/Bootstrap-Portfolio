@@ -46,11 +46,51 @@
         </div>
     </nav>
 
-    <!-- About --> 
+    <!-- Contact --> 
     <section id="about">
         <div class="container">
             <h2 class="text-left">Contact Me</h2>
-
+            <form id="contact-form" method="post" action="contact.php" role="form">
+                <div class="messages"></div>
+                <div class="controls">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="form_name">Name</label>
+                                <input id="form_name" type="text" name="name" class="form-control" placeholder="Your name..." required="required" data-error="Name required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="form_email">Email</label>
+                                <input id="form_email" type="email" name="email" class="form-control" placeholder="example@gmail.com" required="required" data-error="Valid email is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="form_message">Message</label>
+                                <textarea id="form_message" name="message" class="form-control" placeholder="Write something..." rows="4" required="required" data-error="Please, leave a message."></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <input type="submit" class="btn btn-success btn-send" value="Send message">                  
+                    </div>
+                    <div class="row">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p class="text-muted"><strong>*</strong>These fields are required.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
         </div>
     </section> 
 
